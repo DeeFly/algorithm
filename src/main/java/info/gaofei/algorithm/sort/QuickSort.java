@@ -22,17 +22,17 @@ public class QuickSort {
             swampValue(array, left, mid);
             int tempValue = array[left];
             while (l < r) {
-                while(l <r && array[r] >= tempValue) {
+                while (l < r && array[r] >= tempValue) {
                     --r;
                 }
                 array[l] = array[r];    //将 比tempValue小的移到低端
-                while(l <r && array[l] <= tempValue) {
+                while (l < r && array[l] <= tempValue) {
                     l++;
                 }
                 array[r] = array[l];    //将比temp大的移到高端
             }
             array[l] = tempValue;
-            quickSort(array, left, l -1 );
+            quickSort(array, left, l - 1);
             quickSort(array, l + 1, right);
         }
     }
