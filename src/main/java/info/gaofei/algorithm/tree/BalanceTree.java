@@ -113,8 +113,8 @@ public class BalanceTree<AnyType extends Comparable> {
 
     private Node<AnyType> doubleRotateWithLeftChild(Node<AnyType> node) {
         node.left = rotateWithRightChild(node.left);
-        rotateWithLeftChild(node);
-        return node;
+        return rotateWithLeftChild(node);
+        //return node;
     }
 
     private Node<AnyType> rotateWithLeftChild(Node<AnyType> node) {
