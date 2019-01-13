@@ -31,6 +31,7 @@ public class GoldWorkers {
         System.out.println(calculateCount);
     }
 
+    //运算数
     private static int calculateCount = 0;
     private static Map<String, Integer> resultCache = new HashMap<>();
 
