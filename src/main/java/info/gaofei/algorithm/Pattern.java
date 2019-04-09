@@ -20,6 +20,7 @@ public class Pattern {
         if (pattern == null || address == null) {
             return false;
         }
+
         String[] addresses = address.split(" ");
         if (pattern.length() != addresses.length) {
             return false;
